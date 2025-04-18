@@ -43,12 +43,35 @@ Person(Person& P)
     gender = P.gender;
 }
 //Destructor
-virtual ~Person();
+virtual ~Person(){ cout << "Person Destroyed Name "<< name << " and destroyed at age "<< age << endl;}
 
 };
-// Just for showing git pull
+
 
 int main()
 {
-return 0;
+
+    //Default Constructor Example 
+Person x;
+
+cout<<x.getName()<<" is of age " <<x.getAge()<<endl;
+
+// Parametric Constructor
+Person y("Salman",21,true);
+
+cout<<y.getName()<<" is of age " <<y.getAge()<<endl;
+
+// Copy Constructor
+Person z(y);
+
+cout<<z.getName()<<" is of age " <<z.getAge()<<endl;
+
+z.setGender(false);
+z.setName("Rabia Khatun");
+
+cout<<z.getName()<<" is of age " <<z.getAge()<<endl;
+
+
+
+
 }

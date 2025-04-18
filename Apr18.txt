@@ -1,0 +1,16 @@
+Notes 
+
+definition{objects}
+- an instance of a  class
+example: int, string, char, etc.
+instance - single occurrence of something 
+a object is a single occurrence of class 
+
+int x;
+
+Terminal commands:
+1. ls : "List" the contents of the directory or folder
+2. ls -l : shows long listing format. shows permission, size, etc
+3. ls -a : shows all files including the hidden ones including the dots
+4. cd : change directory 
+5. (cd ../) : to go back one place in directory 
